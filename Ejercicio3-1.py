@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-#h, lx, o= .01, [np.arange(-5,5.2,0.2), np.arange(-5,5.2,0.2), np.arange(-2*(np.pi*180),2*(np.pi*180)), np.arange(1,10.18,0.18)], 0
 h, lx, o= .01, [np.arange(-5,5.2,0.2), np.arange(-5,5.2,0.2), np.arange(-2*(np.pi),2*(np.pi),1/4), np.arange(1,10.18,0.18)], 0
 f, axs = plt.subplots(2,2)
 def graph(i, j, x, y1, y2):
