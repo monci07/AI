@@ -13,6 +13,8 @@ for i in range(0,4):
         s = desviación[i+j] 
         listay = (1/np.power((2*(np.pi*180)*s),1/2))*np.exp((-1/2)*np.power((listax-m)/s,2))
         axs[i,j].plot(listax,listay)
+        print("Valores de media: " + str(m) + " y desviacion: " + str(s) + ":")
+        print(str(listay))
         axs[i,j].grid(True)
         listay = np.delete(listay,50)
 
